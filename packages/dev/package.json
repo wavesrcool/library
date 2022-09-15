@@ -17,25 +17,24 @@
   "type": "commonjs",
   "version": "0.0.4",
   "bin": {
-    "write-library": "build/scripts/write-library.js"
+    "write-library": "lib/scripts/write-library.js"
   },
-  "main": "./build",
   "files": [
-    "./build"
+    "./lib"
   ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "w": "tsc -w",
-    "0b": "rm -rf build",
+    "0l": "rm -rf lib",
     "0t": "rm -f tsconfig*tsbuildinfo",
-    "c": "yarn 0b && yarn 0t && tsc --project tsconfig.build.json",
+    "c": "yarn 0l && yarn 0t && tsc --project tsconfig.build.json",
     "lint": "eslint \"./src/**/*.{ts,tsx}\" --max-warnings=0 --fix",
     "build": "yarn lint && yarn c && yarn executable-scripts",
     "prepack": "yarn build",
     "test": "yarn jest",
-    "executable-scripts": "chmod u+x ./build/scripts/*.js"
+    "executable-scripts": "chmod u+x ./lib/scripts/*.js"
   },
   "devDependencies": {
     "@types/glob": "^8.0.0",

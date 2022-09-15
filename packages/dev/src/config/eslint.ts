@@ -45,5 +45,6 @@ export default {
     "/.vscode/**",
     "/.yarn/**",
     "/jest.config.js",
+    "src/index.ts",
   ],
 };
