@@ -2,6 +2,17 @@
   "extends": "@tsconfig/node16",
   "compilerOptions": {
     "composite": true,
-    "skipLibCheck": true
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@wavesrcool/dev": ["dev/src"],
+    },
   }
  }

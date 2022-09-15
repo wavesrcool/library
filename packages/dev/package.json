@@ -1,0 +1,51 @@
+{
+  "author": "Tyson Lupul <js@tysonlupul.com>",
+  "bugs": "https://github.com/wavesrcool/library/issues",
+  "homepage": "https://github.com/wavesrcool/library/tree/main/packages/dev#readme",
+  "contributors": [],
+  "description": "Collection of configurations and tools for software development",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "license": "MIT",
+  "name": "@wavesrcool/dev",
+  "repository": {
+    "directory": "packages/dev",
+    "type": "git",
+    "url": "https://github.com/wavesrcool/library.git"
+  },
+  "type": "commonjs",
+  "version": "0.0.0",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "./build"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "w": "tsc -w",
+    "0b": "rm -rf build",
+    "0t": "rm -f tsconfig*tsbuildinfo",
+    "c": "yarn 0b && yarn 0t && tsc --project tsconfig.build.json",
+    "lint": "eslint \"./src/**/*.{ts,tsx}\" --max-warnings=0 --fix",
+    "build": "yarn lint && yarn c",
+    "prepack": "yarn build",
+    "test": "yarn jest"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier": "^2.7.1"
+  }
+}
