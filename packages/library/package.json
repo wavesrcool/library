@@ -49,5 +49,8 @@
   "devDependencies": {
     "@wavesrcool/dev": "latest"
   },
-  "gitHead": "b7552bcd49bd5e29d3353102a06c275f11a83546"
+  "gitHead": "b7552bcd49bd5e29d3353102a06c275f11a83546",
+  "dependencies": {
+    "@wavesrcool/dev": "0.1.0"
+  }
 }

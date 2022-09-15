@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// Copyright 2020-2022 @wavesrcool/collect authors & contributors
+// Copyright 2020-2022 @wavesrcool/dev authors & contributors
 // SPDX-License-Identifier: MIT
 
 import { appendFileSync, writeFileSync } from "fs";
