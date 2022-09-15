@@ -19,6 +19,7 @@
   "bin": {
     "write-library": "build/scripts/write-library.js"
   },
+  "main": "./build",
   "files": [
     "./build"
   ],

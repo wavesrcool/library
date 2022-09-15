@@ -70,9 +70,10 @@ collect("src", (err, matches) => {
    * @collection @wavesrcool/library
    * @created ${month} ${day} ${year}
    *
-   *
-  `
+   */
+`
     );
+
     matches.map((l) => {
       const line = String(l);
       const writable = line.replace("src/", "./").replace(".ts", "");
