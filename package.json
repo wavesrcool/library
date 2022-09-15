@@ -16,7 +16,8 @@
     "build": "lerna run build --stream",
     "lint": "eslint --ext=.ts packages --fix",
     "lint:all": "lerna run lint --stream --parallel",
-    "test": "yarn jest --coverage"
+    "test": "yarn jest --coverage",
+    "rm": "npm exec --workspaces -- npx rimraf node_modules && npx rimraf node_modules"
   },
   "devDependencies": {
     "@tsconfig/node16": "^1.0.3",
