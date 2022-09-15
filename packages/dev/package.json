@@ -15,7 +15,7 @@
     "url": "https://github.com/wavesrcool/library.git"
   },
   "type": "commonjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "bin": {
     "write-library": "build/scripts/write-library.js"
   },
