@@ -15,7 +15,7 @@
     "url": "https://github.com/wavesrcool/library.git"
   },
   "type": "commonjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "bin": {
     "write-library": "lib/bin/write-library.js"
   },
@@ -51,9 +51,9 @@
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-unused-imports": "^2.0.0",
+    "glob": "^8.0.3",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "glob": "^8.0.3",
     "yargs": "^17.5.1"
   },
   "gitHead": "b7552bcd49bd5e29d3353102a06c275f11a83546"
