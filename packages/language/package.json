@@ -1,0 +1,52 @@
+{
+  "author": "Tyson Lupul <tyson@radroots.org>",
+  "bugs": "https://github.com/radroots/library/issues",
+  "homepage": "https://github.com/radroots/library/tree/main/packages/language#readme",
+  "contributors": [],
+  "description": "A language translation dictionary organized by IETF RFC 3282",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "license": "MIT",
+  "name": "@wavesrcool/language",
+  "repository": {
+    "directory": "packages/language",
+    "type": "git",
+    "url": "https://github.com/radroots/library.git"
+  },
+  "type": "commonjs",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "./lib"
+  ],
+  "keywords": [
+    "radroots",
+    "language",
+    "translation",
+    "dictionary",
+    "json",
+    "iso",
+    "639"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "w": "tsc -w",
+    "0l": "rm -rf lib",
+    "0t": "rm -f tsconfig*tsbuildinfo",
+    "c": "yarn 0l && yarn 0t && tsc --project tsconfig.build.json",
+    "lint": "eslint \"./src/**/*.{ts,tsx,json}\" --max-warnings=10 --fix",
+    "ci": "radroots-ci-library -s=@radroots -p=dictionary",
+    "build": "yarn lint && yarn ci && yarn c",
+    "prepack": "yarn build",
+    "test": "yarn jest",
+    "cl": "languages-collect"
+  },
+  "dependencies": {
+    "@wavesrcool/dev": "^0.1.0"
+  }
+}

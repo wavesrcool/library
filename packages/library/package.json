@@ -34,20 +34,22 @@
     "16"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "w": "tsc -w",
-    "0b": "rm -rf build",
+    "0l": "rm -rf lib",
     "0t": "rm -f tsconfig*tsbuildinfo",
-    "c": "yarn 0b && yarn 0t && tsc --project tsconfig.build.json",
+    "c": "yarn 0l && yarn 0t && tsc --project tsconfig.build.json",
     "lint": "eslint \"./src/**/*.{ts,tsx}\" --max-warnings=0 --fix",
-    "build": "yarn lint && yarn c && npx @wavesrcool/dev write-library",
+    "wl": "write-library",
+    "build": "yarn lint && yarn c && yarn wl",
     "prepack": "yarn build",
     "test": "yarn jest"
   },
-  "devDependencies": {
-    "@wavesrcool/dev": "latest"
-  },
-  "gitHead": "b7552bcd49bd5e29d3353102a06c275f11a83546"
+  "gitHead": "b7552bcd49bd5e29d3353102a06c275f11a83546",
+  "dependencies": {
+    "@wavesrcool/dev": "^0.1.0"
+  }
 }

@@ -62,15 +62,15 @@ collect("src", (err, matches) => {
     writeFileSync(
       classroot,
       `// Copyright 2020-2022 @wavesrcool/library authors & contributors
-  // SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT
   
-  /**
-   * * Library Documentation
-   *
-   * @collection @wavesrcool/library
-   * @created ${month} ${day} ${year}
-   *
-   */
+/**
+ * * Library Documentation
+ *
+ * @collection @wavesrcool/library
+ * @created ${month} ${day} ${year}
+ *
+ */
 `
     );
 
