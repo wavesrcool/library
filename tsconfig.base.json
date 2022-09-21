@@ -13,7 +13,6 @@
     "forceConsistentCasingInFileNames": true,
     "paths": {
       "@wavesrcool/dev": ["dev/src"],
-      "@wavesrcool/language": ["language/src"],
       "@wavesrcool/library": ["library/src"],
     },
   }

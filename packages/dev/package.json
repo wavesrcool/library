@@ -5,7 +5,7 @@
   "contributors": [],
   "description": "Collection of configurations and tools for software development",
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=14.0.0"
   },
   "license": "MIT",
   "name": "@wavesrcool/dev",
@@ -17,7 +17,6 @@
   "type": "commonjs",
   "version": "0.1.0",
   "bin": {
-    "languages-collect": "lib/bin/languages-collect.js",
     "write-library": "lib/bin/write-library.js"
   },
   "files": [
