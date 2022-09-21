@@ -15,7 +15,7 @@
     "url": "https://github.com/wavesrcool/library.git"
   },
   "type": "commonjs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "bin": {
     "configure-husky": "lib/bin/configure-husky.js",
     "write-library": "lib/bin/write-library.js"
