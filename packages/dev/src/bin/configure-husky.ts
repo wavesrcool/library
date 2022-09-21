@@ -16,6 +16,7 @@ const main = () => {
   mkdirSync(directory, { recursive: true });
   const filename = join(directory, "pre-commit");
   writeFileSync(filename, data);
+  exec(`chmod +x ${filename}`);
   exec(`yarn husky install`);
 };
 
