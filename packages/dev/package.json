@@ -17,6 +17,7 @@
   "type": "commonjs",
   "version": "0.1.1",
   "bin": {
+    "configure-husky": "lib/bin/configure-husky.js",
     "write-library": "lib/bin/write-library.js"
   },
   "files": [
@@ -52,6 +53,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "glob": "^8.0.3",
+    "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "yargs": "^17.5.1"
