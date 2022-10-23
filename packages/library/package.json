@@ -46,7 +46,7 @@
     "prepack": "yarn build",
     "test": "yarn jest"
   },
-  "gitHead": "b7552bcd49bd5e29d3353102a06c275f11a83546",
+  "gitHead": "4cf900086db8fd4dbd60d4274e2ac2d4b01127d9",
   "dependencies": {
     "@wavesrcool/dev": "^0.1.3"
   }
