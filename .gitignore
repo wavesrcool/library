@@ -1,6 +1,7 @@
 node_modules/
 tmp/
 lib/
+.tsc/
 coverage/
 tsconfig*buildinfo
 .vscode/

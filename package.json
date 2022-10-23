@@ -1,5 +1,5 @@
 {
-  "author": "Tyson Lupul <js@tysonlupul.com>",
+  "author": "Tyson Lupul <tyson@lupul.dev>",
   "bugs": "https://github.com/wavesrcool/library/issues",
   "homepage": "https://github.com/wavesrcool/library#readme",
   "license": "MIT",
@@ -17,7 +17,7 @@
     "lint": "eslint --ext=.ts packages --fix",
     "lint:all": "lerna run lint --stream --parallel",
     "test": "yarn jest --coverage",
-    "rm": "npm exec --workspaces -- npx rimraf node_modules && npx rimraf node_modules"
+    "w": "tsc -w"
   },
   "devDependencies": {
     "@tsconfig/node16": "^1.0.3",
@@ -30,6 +30,6 @@
     "ts-node": "^10.9.1"
   },
   "resolutions": {
-    "typescript": "^4.8.3"
+    "typescript": "4.8.4"
   }
 }

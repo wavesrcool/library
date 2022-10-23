@@ -1,9 +1,9 @@
 {
-  "author": "Tyson Lupul <js@tysonlupul.com>",
+  "author": "Tyson Lupul <tyson@lupul.dev>",
   "bugs": "https://github.com/wavesrcool/library/issues",
   "homepage": "https://github.com/wavesrcool/library/tree/main/packages/library#readme",
   "contributors": [],
-  "description": "Library of fun and useful javascript",
+  "description": "Library of JavaScript",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -23,15 +23,13 @@
   ],
   "keywords": [
     "library",
-    "fun",
-    "useful",
     "javascript",
     "classes",
     "functions",
     "types",
     "es6",
     "node",
-    "16"
+    "browser"
   ],
   "publishConfig": {
     "access": "public",
@@ -43,8 +41,8 @@
     "0t": "rm -f tsconfig*tsbuildinfo",
     "c": "yarn 0l && yarn 0t && tsc --project tsconfig.build.json",
     "lint": "eslint \"./src/**/*.{ts,tsx}\" --max-warnings=0 --fix",
-    "wl": "write-library",
-    "build": "yarn lint && yarn c && yarn wl",
+    "ci": "wavesrcool-library",
+    "build": "yarn lint && yarn ci && yarn c",
     "prepack": "yarn build",
     "test": "yarn jest"
   },

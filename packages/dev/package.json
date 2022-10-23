@@ -1,9 +1,9 @@
 {
-  "author": "Tyson Lupul <js@tysonlupul.com>",
+  "author": "Tyson Lupul <tyson@lupul.dev>",
   "bugs": "https://github.com/wavesrcool/library/issues",
   "homepage": "https://github.com/wavesrcool/library/tree/main/packages/dev#readme",
   "contributors": [],
-  "description": "Collection of configurations and tools for software development",
+  "description": "A collection of JavaScript software development configurations and cli tools",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -17,8 +17,9 @@
   "type": "commonjs",
   "version": "0.1.2",
   "bin": {
-    "configure-husky": "lib/bin/configure-husky.js",
-    "write-library": "lib/bin/write-library.js"
+    "configure-husky": "lib/cli/configure-husky.js",
+    "compose-library": "lib/cli/compose-library.js",
+    "wavesrcool-library": "lib/cli/wavesrcool-library.js"
   },
   "files": [
     "./lib"
@@ -36,7 +37,7 @@
     "build": "yarn lint && yarn c && yarn executable-scripts",
     "prepack": "yarn build",
     "test": "yarn jest",
-    "executable-scripts": "chmod u+x ./lib/bin/*.js"
+    "executable-scripts": "chmod u+x ./lib/cli/*.js"
   },
   "dependencies": {
     "@types/glob": "^8.0.0",
