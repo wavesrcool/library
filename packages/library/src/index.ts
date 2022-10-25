@@ -5,7 +5,7 @@
  * * Library Documentation
  *
  * @collection @wavesrcool/library
- * @created 9 23 2022
+ * @created 9 25 2022
  *
  */
 export { LibraryFunctionsShapesBundlesCyclicKeys } from "./functions/shapes/bundles/cyclic/keys/LibraryFunctionsShapesBundlesCyclicKeys";
