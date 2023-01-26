@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// Copyright 2020-2022 @wavesrcool/dev authors & contributors
+// Copyright 2020-2023 @wavesrcool/dev authors & contributors
 // SPDX-License-Identifier: MIT
 
 import { appendFileSync, writeFileSync } from "fs";
@@ -61,7 +61,7 @@ collect("src", (err, matches) => {
 
     writeFileSync(
       classroot,
-      `// Copyright 2020-2022 @wavesrcool/library authors & contributors
+      `// Copyright 2020-2023 @wavesrcool/library authors & contributors
 // SPDX-License-Identifier: MIT
   
 /**

@@ -3,7 +3,7 @@
   "bugs": "https://github.com/wavesrcool/library/issues",
   "homepage": "https://github.com/wavesrcool/library/tree/main/packages/library#readme",
   "contributors": [],
-  "description": "Library of JavaScript",
+  "description": "Library of helpful JavaScript",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -23,10 +23,6 @@
   ],
   "keywords": [
     "library",
-    "javascript",
-    "classes",
-    "functions",
-    "types",
     "es6",
     "node",
     "browser"
@@ -36,15 +32,17 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
+    "rns": "wavesrcool-rename-files-src",
     "w": "tsc -w",
     "0l": "rm -rf lib",
     "0t": "rm -f tsconfig*tsbuildinfo",
     "c": "yarn 0l && yarn 0t && tsc --project tsconfig.build.json",
     "lint": "eslint \"./src/**/*.{ts,tsx}\" --max-warnings=0 --fix",
-    "ci": "wavesrcool-library",
-    "build": "yarn lint && yarn ci && yarn c",
+    "ci": "wavesrcool-library && yarn lint",
+    "build": "yarn ci && yarn c",
     "prepack": "yarn build",
-    "test": "yarn jest"
+    "test": "yarn jest",
+    "update": "rm -rf node_modules && yarn"
   },
   "gitHead": "4cf900086db8fd4dbd60d4274e2ac2d4b01127d9",
   "dependencies": {

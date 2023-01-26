@@ -1,4 +1,4 @@
-// Copyright 2020-2022 @wavesrcool authors & contributors
+// Copyright 2020-2023 @wavesrcool authors & contributors
 // SPDX-License-Identifier: MIT
 
 /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// Copyright 2020-2022 @wavesrcool/dev authors & contributors
+// Copyright 2020-2023 @wavesrcool/dev authors & contributors
 // SPDX-License-Identifier: MIT
 
 import { appendFileSync, writeFileSync } from "fs";
@@ -28,7 +28,7 @@ const writeCopyrights = (
   pkglib: string,
   lic?: "MIT" | "BSD-2-Clause" | "BSD-3-Clause"
 ): string => {
-  return `// Copyright 2020-2022 @${pkg}/${pkglib} authors & contributors
+  return `// Copyright 2020-2023 @${pkg}/${pkglib} authors & contributors
     // SPDX-License-Identifier: ${lic || `UNLICENSED`}`;
 };
 
