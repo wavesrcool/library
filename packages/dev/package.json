@@ -15,7 +15,7 @@
     "url": "https://github.com/wavesrcool/library.git"
   },
   "type": "commonjs",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "bin": {
     "wavesrcool-configure-husky": "lib/bins/wavesrcool-configure-husky/main.js",
     "wavesrcool-compose-library": "lib/bins/wavesrcool-compose-library/main.js",
