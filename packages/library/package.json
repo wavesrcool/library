@@ -15,7 +15,7 @@
     "url": "https://github.com/wavesrcool/library.git"
   },
   "type": "commonjs",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -46,6 +46,6 @@
   },
   "gitHead": "4cf900086db8fd4dbd60d4274e2ac2d4b01127d9",
   "dependencies": {
-    "@wavesrcool/dev": "^0.1.5"
+    "@wavesrcool/dev": "^0.1.6"
   }
 }
