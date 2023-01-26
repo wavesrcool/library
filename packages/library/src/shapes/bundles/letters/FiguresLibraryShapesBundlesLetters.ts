@@ -3,9 +3,8 @@
 
 import { TypesShapesBundles } from "../_types";
 
-export const ReferenceShapesBundlesBasis: TypesShapesBundles = {
-  letters: "",
-  pass: false,
-  time: 0,
-  key: "",
+export type FiguresLibraryShapesBundlesLetters = {
+  bundle: TypesShapesBundles;
+  letters: string;
+  pass: boolean;
 };

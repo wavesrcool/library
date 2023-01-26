@@ -1,17 +1,17 @@
 // Copyright 2020-2023 @wavesrcool/library authors & contributors
 // SPDX-License-Identifier: MIT
 
-import { LibraryTypesShapesBundles } from "../_types";
-import { TypesFiguresShapesBundlesLetters } from "./TypesFiguresLibraryShapesBundlesLetters";
+import { TypesShapesBundles } from "../_types";
+import { FiguresLibraryShapesBundlesLetters } from "./FiguresLibraryShapesBundlesLetters";
 
 export const LibraryShapesBundlesLetters = ({
   bundle: bundle0,
   letters,
   pass,
-}: TypesFiguresShapesBundlesLetters): LibraryTypesShapesBundles => {
+}: FiguresLibraryShapesBundlesLetters): TypesShapesBundles => {
   const { key } = bundle0;
   const time = Date.now();
-  const bundle: LibraryTypesShapesBundles = {
+  const bundle: TypesShapesBundles = {
     letters,
     pass,
     time,

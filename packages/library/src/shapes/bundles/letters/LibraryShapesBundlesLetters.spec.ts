@@ -1,15 +1,15 @@
 // Copyright 2020-2023 @wavesrcool/library authors & contributors
 // SPDX-License-Identifier: MIT
 
-import { LibraryReferenceShapesBundlesBasis } from "../_ref";
+import { ReferenceShapesBundlesBasis } from "../_ref";
+import { FiguresLibraryShapesBundlesLetters } from "./FiguresLibraryShapesBundlesLetters";
 import { LibraryShapesBundlesLetters } from "./LibraryShapesBundlesLetters";
-import { TypesFiguresShapesBundlesLetters } from "./TypesFiguresLibraryShapesBundlesLetters";
 
 describe("LibraryShapesBundlesLetters test", () => {
   it("run", () => {
-    const bundle = LibraryReferenceShapesBundlesBasis;
+    const bundle = ReferenceShapesBundlesBasis;
 
-    const figure: TypesFiguresShapesBundlesLetters = {
+    const figure: FiguresLibraryShapesBundlesLetters = {
       bundle,
       letters: "a",
       pass: false,
