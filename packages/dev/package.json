@@ -17,11 +17,11 @@
   "type": "commonjs",
   "version": "0.1.6",
   "bin": {
-    "wavesrcool-configure-husky": "lib/cli/wavesrcool-configure-husky/main.js",
-    "wavesrcool-compose-library": "lib/cli/wavesrcool-compose-library/main.js",
-    "wavesrcool-library": "lib/cli/wavesrcool-library/main.js",
-    "wavesrcool-rename-files-src": "lib/cli/wavesrcool-rename-files-src/main.js",
-    "wavesrcool-rename-files-edit": "lib/cli/wavesrcool-rename-files-edit/main.js"
+    "wavesrcool-configure-husky": "lib/bins/wavesrcool-configure-husky/main.js",
+    "wavesrcool-compose-library": "lib/bins/wavesrcool-compose-library/main.js",
+    "wavesrcool-library": "lib/bins/wavesrcool-library/main.js",
+    "wavesrcool-rename-files-src": "lib/bins/wavesrcool-rename-files-src/main.js",
+    "wavesrcool-rename-files-edit": "lib/bins/wavesrcool-rename-files-edit/main.js"
   },
   "files": [
     "./lib"
@@ -39,7 +39,7 @@
     "build": "yarn lint && yarn c && yarn executable-scripts",
     "prepack": "yarn build",
     "test": "yarn jest",
-    "executable-scripts": "chmod u+x ./lib/cli/**/*.js"
+    "executable-scripts": "chmod u+x ./lib/bins/**/*.js"
   },
   "dependencies": {
     "@types/glob": "^8.0.0",
